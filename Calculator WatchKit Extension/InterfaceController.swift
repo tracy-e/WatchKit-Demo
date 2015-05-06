@@ -16,7 +16,6 @@ class InterfaceController: WKInterfaceController {
         case None, Plus, Minus, Multiply, Divide
     }
     
-    
     @IBOutlet var resultLabel: WKInterfaceLabel!
     var displayText: String = ""
     var operation: OperationType = .None
