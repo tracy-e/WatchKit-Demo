@@ -127,12 +127,18 @@ class InterfaceController: WKInterfaceController {
     // MARK: -
     
     @IBAction func point() {
-        if displayText == "" {
-            displayText.write("0.")
+        if operation != .None && previousNumber == nil {
+            previousNumber = displayText
+            displayText = "0."
             resultLabel.setText(displayText)
-        } else if find(displayText, ".") == nil {
-            displayText.write(".")
-            resultLabel.setText(displayText)
+        } else {
+            if displayText == "" {
+                displayText.write("0.")
+                resultLabel.setText(displayText)
+            } else if find(displayText, ".") == nil {
+                displayText.write(".")
+                resultLabel.setText(displayText)
+            }
         }
     }
     
