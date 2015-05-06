@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--计算器-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="计算器" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calculator_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="24" alignment="left" verticalAlignment="bottom" id="vGy-IB-8X6">
+                            <items>
+                                <label alignment="right" verticalAlignment="center" text="0" textAlignment="right" id="K2o-br-NLD">
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" layout="vertical" radius="0.0" spacing="1" id="LfI-Ka-Kp4">
+                            <items>
+                                <group width="1" alignment="left" spacing="1" id="a6S-Or-e8v">
+                                    <items>
+                                        <button alignment="left" id="6ju-T5-4HM">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="MC0-j9-3bJ">
+                                                <items>
+                                                    <label width="1" alignment="left" text="7" textAlignment="center" id="4dr-Ch-XC7"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="seven" destination="AgC-eL-Hgc" id="Xfu-N2-8bH"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="6RX-eE-JXa">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="0VW-SN-tGq">
+                                                <items>
+                                                    <label width="1" alignment="left" text="8" textAlignment="center" id="FDf-1T-JLw"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="eight" destination="AgC-eL-Hgc" id="14z-Kz-fZD"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="2wh-Sz-dwf">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="0tK-AR-gdD">
+                                                <items>
+                                                    <label width="1" alignment="left" text="9" textAlignment="center" id="NDy-Jw-1uF"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="nine" destination="AgC-eL-Hgc" id="hps-h9-tu9"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="nVC-2F-T97">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="oKh-Ev-SVT">
+                                                <items>
+                                                    <label width="1" alignment="left" text="+" textAlignment="center" id="AvE-07-s2o"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.96862745098039216" green="0.55686274509803924" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="plus" destination="AgC-eL-Hgc" id="dFo-3f-KfS"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" spacing="1" id="AUQ-l6-fxg">
+                                    <items>
+                                        <button alignment="left" id="yBj-oP-Tvd">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="sYE-Ua-Tmb">
+                                                <items>
+                                                    <label width="1" alignment="left" text="4" textAlignment="center" id="f4o-9z-OeI"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="four" destination="AgC-eL-Hgc" id="1dE-Uw-tPh"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="uyw-dm-a0X">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="lVd-ng-WKD">
+                                                <items>
+                                                    <label width="1" alignment="left" text="5" textAlignment="center" id="QiI-Zv-Bnn"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="five" destination="AgC-eL-Hgc" id="MTw-Rh-RbQ"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="vtE-kZ-14I">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="Zwh-ux-EaU">
+                                                <items>
+                                                    <label width="1" alignment="left" text="6" textAlignment="center" id="yPe-39-JIg"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="six" destination="AgC-eL-Hgc" id="zhY-h0-b37"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="ZGa-ez-AAD">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="YKd-ot-abH">
+                                                <items>
+                                                    <label width="1" alignment="left" text="-" textAlignment="center" id="ffr-jB-lIm"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.5568627451" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="minus" destination="AgC-eL-Hgc" id="h1N-7I-olW"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" spacing="1" id="XsB-MF-CGd">
+                                    <items>
+                                        <button alignment="left" id="NGD-HK-84A">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="fEW-Jt-bS3">
+                                                <items>
+                                                    <label width="1" alignment="left" text="1" textAlignment="center" id="UD4-x8-ML1"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="one" destination="AgC-eL-Hgc" id="n7v-kX-2aX"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="mq7-3n-oyz">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="hLm-ZG-dyF">
+                                                <items>
+                                                    <label width="1" alignment="left" text="2" textAlignment="center" id="mtL-v2-4Hs"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="two" destination="AgC-eL-Hgc" id="XQa-hF-srJ"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="xVR-Ek-1e6">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="lXY-xR-IWv">
+                                                <items>
+                                                    <label width="1" alignment="left" text="3" textAlignment="center" id="fq9-Z2-scK"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="three" destination="AgC-eL-Hgc" id="yIv-at-cFp"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="W99-Hx-xKH">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="qU2-eY-RWy">
+                                                <items>
+                                                    <label width="1" alignment="left" text="×" textAlignment="center" id="Yo7-ih-vwL"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.5568627451" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="multiply" destination="AgC-eL-Hgc" id="6df-0q-nhJ"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" spacing="1" id="3VY-9l-qob">
+                                    <items>
+                                        <button alignment="left" id="iYs-UC-rlu">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="FeT-gb-xhg">
+                                                <items>
+                                                    <label width="1" alignment="left" text="0" textAlignment="center" id="ui2-Zz-7Ub"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="zero" destination="AgC-eL-Hgc" id="hes-KQ-pGc"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="ykR-g2-Cb8">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="5EK-Fa-GQl">
+                                                <items>
+                                                    <label width="1" alignment="left" text="." textAlignment="center" id="i6k-io-bsv"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="point" destination="AgC-eL-Hgc" id="ile-yY-Uxx"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="inY-GU-Ohp">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="CyW-3i-VM9">
+                                                <items>
+                                                    <label width="1" alignment="left" text="=" textAlignment="center" id="J3A-Jd-NYu"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="result" destination="AgC-eL-Hgc" id="rDB-6I-k16"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="4Cd-cf-bLe">
+                                            <group key="contentGroup" width="0.25" alignment="left" radius="0.0" id="7Pt-dO-miU">
+                                                <items>
+                                                    <label width="1" alignment="left" text="÷" textAlignment="center" id="jJT-tv-D3O"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.5568627451" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                                                <variation key="device=watch42mm">
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="8"/>
+                                                </variation>
+                                            </group>
+                                            <connections>
+                                                <action selector="divide" destination="AgC-eL-Hgc" id="Sos-EZ-7GX"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="AIG-77-T1H">
+                        <items>
+                            <menuItem title="Delete" icon="resume" id="le3-y2-Gj6">
+                                <connections>
+                                    <action selector="delete" destination="AgC-eL-Hgc" id="bH3-Fh-ACD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Clear" icon="trash" id="fJm-uY-vpB">
+                                <connections>
+                                    <action selector="clear" destination="AgC-eL-Hgc" id="NHT-pV-b7j"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="resultLabel" destination="K2o-br-NLD" id="Sfk-re-ENb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="224" y="339"/>
+        </scene>
+    </scenes>
+</document>
