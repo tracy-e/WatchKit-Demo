@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--计算器-->
+        <!--Calculator-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="计算器" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calculator_WatchKit_App" customModuleProvider="target">
+                <controller title="Calculator" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calculator_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="24" alignment="left" verticalAlignment="bottom" id="vGy-IB-8X6">
                             <items>

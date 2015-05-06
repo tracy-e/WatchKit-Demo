@@ -1,0 +1,60 @@
+
+/* Class = "WKInterfaceLabel"; text = "7"; ObjectID = "4dr-Ch-XC7"; */
+"4dr-Ch-XC7.text" = "7";
+
+/* Class = "WKInterfaceController"; title = "Calculator"; ObjectID = "AgC-eL-Hgc"; */
+"AgC-eL-Hgc.title" = "计算器";
+
+/* Class = "WKInterfaceLabel"; text = "+"; ObjectID = "AvE-07-s2o"; */
+"AvE-07-s2o.text" = "+";
+
+/* Class = "WKInterfaceLabel"; text = "8"; ObjectID = "FDf-1T-JLw"; */
+"FDf-1T-JLw.text" = "8";
+
+/* Class = "WKInterfaceLabel"; text = "="; ObjectID = "J3A-Jd-NYu"; */
+"J3A-Jd-NYu.text" = "=";
+
+/* Class = "WKInterfaceLabel"; text = "0"; ObjectID = "K2o-br-NLD"; */
+"K2o-br-NLD.text" = "0";
+
+/* Class = "WKInterfaceLabel"; text = "9"; ObjectID = "NDy-Jw-1uF"; */
+"NDy-Jw-1uF.text" = "9";
+
+/* Class = "WKInterfaceLabel"; text = "5"; ObjectID = "QiI-Zv-Bnn"; */
+"QiI-Zv-Bnn.text" = "5";
+
+/* Class = "WKInterfaceLabel"; text = "1"; ObjectID = "UD4-x8-ML1"; */
+"UD4-x8-ML1.text" = "1";
+
+/* Class = "WKInterfaceLabel"; text = "×"; ObjectID = "Yo7-ih-vwL"; */
+"Yo7-ih-vwL.text" = "×";
+
+/* Class = "WKInterfaceLabel"; text = "4"; ObjectID = "f4o-9z-OeI"; */
+"f4o-9z-OeI.text" = "4";
+
+/* Class = "WKInterfaceMenuItem"; title = "Clear"; ObjectID = "fJm-uY-vpB"; */
+"fJm-uY-vpB.title" = "清除";
+
+/* Class = "WKInterfaceLabel"; text = "-"; ObjectID = "ffr-jB-lIm"; */
+"ffr-jB-lIm.text" = "-";
+
+/* Class = "WKInterfaceLabel"; text = "3"; ObjectID = "fq9-Z2-scK"; */
+"fq9-Z2-scK.text" = "3";
+
+/* Class = "WKInterfaceLabel"; text = "."; ObjectID = "i6k-io-bsv"; */
+"i6k-io-bsv.text" = ".";
+
+/* Class = "WKInterfaceLabel"; text = "÷"; ObjectID = "jJT-tv-D3O"; */
+"jJT-tv-D3O.text" = "÷";
+
+/* Class = "WKInterfaceMenuItem"; title = "Delete"; ObjectID = "le3-y2-Gj6"; */
+"le3-y2-Gj6.title" = "删除";
+
+/* Class = "WKInterfaceLabel"; text = "2"; ObjectID = "mtL-v2-4Hs"; */
+"mtL-v2-4Hs.text" = "2";
+
+/* Class = "WKInterfaceLabel"; text = "0"; ObjectID = "ui2-Zz-7Ub"; */
+"ui2-Zz-7Ub.text" = "0";
+
+/* Class = "WKInterfaceLabel"; text = "6"; ObjectID = "yPe-39-JIg"; */
+"yPe-39-JIg.text" = "6";

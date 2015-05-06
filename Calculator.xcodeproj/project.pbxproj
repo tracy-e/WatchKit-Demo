@@ -19,6 +19,8 @@
 		9FC9EF891AF9A33A00CA1D3D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC9EF871AF9A33A00CA1D3D /* Interface.storyboard */; };
 		9FC9EF8B1AF9A33A00CA1D3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC9EF8A1AF9A33A00CA1D3D /* Images.xcassets */; };
 		9FC9EF8E1AF9A33A00CA1D3D /* Calculator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FC9EF761AF9A33A00CA1D3D /* Calculator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FC9EFAB1AF9E20E00CA1D3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FC9EFAD1AF9E20E00CA1D3D /* InfoPlist.strings */; };
+		9FC9EFB11AF9E3CA00CA1D3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FC9EFB31AF9E3CA00CA1D3D /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,13 @@
 		9FC9EF861AF9A33A00CA1D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC9EF881AF9A33A00CA1D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		9FC9EF8A1AF9A33A00CA1D3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FC9EFA01AF9E0F800CA1D3D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		9FC9EFA11AF9E0F800CA1D3D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9FC9EFA21AF9E0F800CA1D3D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Interface.strings"; sourceTree = "<group>"; };
+		9FC9EFAE1AF9E20F00CA1D3D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9FC9EFB21AF9E3CA00CA1D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FC9EFB41AF9E3CB00CA1D3D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9FC9EFB51AF9E3D500CA1D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC9EF511AF9A30500CA1D3D /* Info.plist */,
+				9FC9EFAD1AF9E20E00CA1D3D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC9EF861AF9A33A00CA1D3D /* Info.plist */,
+				9FC9EFB31AF9E3CA00CA1D3D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -305,6 +316,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9FC9EF441AF9A30500CA1D3D;
 			productRefGroup = 9FC9EF4E1AF9A30500CA1D3D /* Products */;
@@ -325,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC9EF581AF9A30500CA1D3D /* Main.storyboard in Resources */,
+				9FC9EFAB1AF9E20E00CA1D3D /* InfoPlist.strings in Resources */,
 				9FC9EF5D1AF9A30500CA1D3D /* LaunchScreen.xib in Resources */,
 				9FC9EF5A1AF9A30500CA1D3D /* Images.xcassets in Resources */,
 			);
@@ -351,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC9EF891AF9A33A00CA1D3D /* Interface.storyboard in Resources */,
+				9FC9EFB11AF9E3CA00CA1D3D /* InfoPlist.strings in Resources */,
 				9FC9EF8B1AF9A33A00CA1D3D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +422,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FC9EF571AF9A30500CA1D3D /* Base */,
+				9FC9EFA01AF9E0F800CA1D3D /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -416,6 +431,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FC9EF5C1AF9A30500CA1D3D /* Base */,
+				9FC9EFA11AF9E0F800CA1D3D /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -424,8 +440,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FC9EF881AF9A33A00CA1D3D /* Base */,
+				9FC9EFA21AF9E0F800CA1D3D /* zh-Hans */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		9FC9EFAD1AF9E20E00CA1D3D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FC9EFAE1AF9E20F00CA1D3D /* zh-Hans */,
+				9FC9EFB51AF9E3D500CA1D3D /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9FC9EFB31AF9E3CA00CA1D3D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FC9EFB21AF9E3CA00CA1D3D /* Base */,
+				9FC9EFB41AF9E3CB00CA1D3D /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -641,6 +676,7 @@
 				9FC9EF6E1AF9A30500CA1D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FC9EF6F1AF9A30500CA1D3D /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +685,7 @@
 				9FC9EF711AF9A30500CA1D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FC9EF8F1AF9A33A00CA1D3D /* Build configuration list for PBXNativeTarget "Calculator WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +694,7 @@
 				9FC9EF911AF9A33A00CA1D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FC9EF921AF9A33A00CA1D3D /* Build configuration list for PBXNativeTarget "Calculator WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +703,7 @@
 				9FC9EF941AF9A33A00CA1D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

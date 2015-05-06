@@ -16,22 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="shot" translatesAutoresizingMaskIntoConstraints="NO" id="fpI-Hs-Dz9">
-                                <rect key="frame" x="222" y="105" width="156" height="195"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shot" translatesAutoresizingMaskIntoConstraints="NO" id="F5x-z8-sKK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-hX-mOe">
-                                <rect key="frame" x="249" y="319" width="103" height="31"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.5568627451" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5Ou-hX-mOe" firstAttribute="centerX" secondItem="fpI-Hs-Dz9" secondAttribute="centerX" constant="0.5" id="PXy-TE-rPI"/>
-                            <constraint firstAttribute="centerY" secondItem="fpI-Hs-Dz9" secondAttribute="centerY" constant="97.5" id="VhC-4C-flI"/>
-                            <constraint firstAttribute="centerX" secondItem="fpI-Hs-Dz9" secondAttribute="centerX" id="qNm-wt-Esg"/>
-                            <constraint firstItem="5Ou-hX-mOe" firstAttribute="top" secondItem="fpI-Hs-Dz9" secondAttribute="bottom" constant="19" id="zh5-Vd-1QN"/>
+                            <constraint firstAttribute="trailing" secondItem="F5x-z8-sKK" secondAttribute="trailing" id="Nbf-pP-esk"/>
+                            <constraint firstItem="F5x-z8-sKK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="XDd-C2-gdK"/>
+                            <constraint firstItem="F5x-z8-sKK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ZIq-G4-hF6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="F5x-z8-sKK" secondAttribute="bottom" id="jZb-i9-idB"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="shot" width="156" height="195"/>
+        <image name="shot" width="409" height="676"/>
     </resources>
 </document>
