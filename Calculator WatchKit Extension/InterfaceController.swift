@@ -134,7 +134,7 @@ class InterfaceController: WKInterfaceController {
             if displayText == "" {
                 displayText.write("0.")
                 resultLabel.setText(displayText)
-            } else if find(displayText, ".") == nil {
+            } else if !contains(displayText, ".") {
                 displayText.write(".")
                 resultLabel.setText(displayText)
             }
