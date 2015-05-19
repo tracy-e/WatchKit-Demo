@@ -1,5 +1,4 @@
-ld/
-*.pbxuser
+er
 !default.pbxuser
 *.mode1v3
 !default.mode1v3
@@ -28,4 +27,5 @@ Carthage
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 Carthage/Checkouts
 
+Carthage/Build
 Carthage/Build
