@@ -19,7 +19,11 @@ class TimelineCell: NSObject {
     var issue: Issue! {
         didSet {
             if let URL = NSURL(string: "http:\(issue.member.avatarMini)") {
-                avatar.kf_setImageWithURL(URL, placeholderImage: UIImage(named: "avator"))
+                Utils.loadImage(URL, completionHandler: { [weak self] (image) -> Void in
+                    if let strongSelf = self, image = image {
+                        strongSelf.avatar.setImage(image)
+                    }
+                })
             }
             usernameLabel.setText(issue.member.username)
             titleLabel.setText(issue.title)

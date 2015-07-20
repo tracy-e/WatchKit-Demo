@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Member{
+class Member {
 
 	var avatarLarge : String!
 	var avatarMini : String!
@@ -31,7 +31,7 @@ class Member{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if avatarLarge != nil{
 			dictionary["avatar_large"] = avatarLarge
 		}

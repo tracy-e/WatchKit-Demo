@@ -62,8 +62,8 @@ class InterfaceController: WKInterfaceController {
     // MARK: - Actions
     
     @IBAction func zero() {
-        if let number = displayText.toInt() where number == 0 {
-            println("do nothing")
+        if let number = Int(displayText) where number == 0 {
+            print("do nothing")
         } else {
             pressedNumber(0)
         }
@@ -134,7 +134,7 @@ class InterfaceController: WKInterfaceController {
             if displayText == "" {
                 displayText.write("0.")
                 resultLabel.setText(displayText)
-            } else if !contains(displayText, ".") {
+            } else if !displayText.characters.contains(".") {
                 displayText.write(".")
                 resultLabel.setText(displayText)
             }
@@ -156,7 +156,7 @@ class InterfaceController: WKInterfaceController {
             case .Divide:
                 displayText = NSNumber(double: previousNumber / displayNumber).stringValue
             default:
-                println("do nothing")
+                print("do nothing")
             }
             resultLabel.setText(displayText)
             self.previousNumber = nil
@@ -169,7 +169,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func delete() {
         let length = displayText.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
         if length > 0 {
-            displayText = dropLast(displayText)
+            displayText = String(dropLast(displayText.characters))
             if displayText == "" {
                 resultLabel.setText("0")
             } else {

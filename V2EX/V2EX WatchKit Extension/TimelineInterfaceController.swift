@@ -8,11 +8,11 @@
 
 import WatchKit
 import Foundation
-import Alamofire
 
 let kPageSize = 10
 class TimelineInterfaceController: WKInterfaceController, LoadMoreCellDelegate {
     
+    @IBOutlet var activityIndicator: WKInterfaceGroup!
     @IBOutlet var table: WKInterfaceTable!
     var issues = [Issue]()
     var currentPageIndex = 0
@@ -38,22 +38,24 @@ class TimelineInterfaceController: WKInterfaceController, LoadMoreCellDelegate {
 
     // MARK: - 
     func loadData(urlString: String) {
-        Alamofire.request(.GET, urlString)
-            .responseJSON { [weak self] (_, _, result, error) in
-                if let strongSelf = self, issues = result as? [AnyObject] where error == nil {
-                    strongSelf.issues = issues.map { Issue(fromDictionary: $0 as! NSDictionary) }
-                    strongSelf.configureTable()
-                } else {
-                    println(error?.localizedDescription);
-                }
+        if let URL = NSURL(string: urlString) {
+            NSURLSession.sharedSession().dataTaskWithURL(URL, completionHandler: { [weak self] (data, _, error) -> Void in
+                do {
+                    if let strongSelf = self, data = data, issues = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0)) as? [AnyObject] where error == nil {
+                        strongSelf.issues = issues.map { Issue(fromDictionary: $0 as! NSDictionary) }
+                        strongSelf.configureTable()
+                        strongSelf.activityIndicator.setHidden(true)
+                    }
+                } catch { }
+            })?.resume()
         }
     }
     
     func configureTable() {
         let issueCount = issues.count
         let lastCount = issueCount - kPageSize * currentPageIndex
-        var isFullPage = (lastCount > kPageSize)
-        var pageCount = isFullPage ? kPageSize : lastCount
+        let isFullPage = (lastCount > kPageSize)
+        let pageCount = isFullPage ? kPageSize : lastCount
         let startIndex = kPageSize * currentPageIndex
         let endIndex = startIndex + pageCount
         

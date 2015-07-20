@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Issue{
+class Issue {
 
 	var content : String!
 	var contentRendered : String!
@@ -45,7 +45,7 @@ class Issue{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if content != nil{
 			dictionary["content"] = content
 		}

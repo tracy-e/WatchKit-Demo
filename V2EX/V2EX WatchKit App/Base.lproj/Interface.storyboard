@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8077.2"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -79,6 +79,7 @@
             <objects>
                 <controller identifier="Timeline" id="zXD-ZK-Qc1" customClass="TimelineInterfaceController" customModule="V2EX_WatchKit_Extension">
                     <items>
+                        <group width="1" height="1" alignment="left" backgroundImage="spinner" contentMode="center" id="rAe-cX-brw"/>
                         <table alignment="left" id="i8C-2O-Lrg">
                             <items>
                                 <tableRow identifier="TimelineCell" id="jdk-Y8-AyY" customClass="TimelineCell" customModule="V2EX_WatchKit_Extension">
@@ -157,79 +158,12 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="activityIndicator" destination="rAe-cX-brw" id="jcc-Yr-s9g"/>
                         <outlet property="table" destination="i8C-2O-Lrg" id="rhw-Dx-bgS"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="431" y="345"/>
-        </scene>
-        <!--IssueDetail-->
-        <scene sceneID="q57-7n-0yD">
-            <objects>
-                <controller identifier="IssueDetail" id="BOU-0n-xXn" customClass="IssueDetailInterfaceController" customModule="V2EX_WatchKit_Extension">
-                    <items>
-                        <group width="1" height="0.0" alignment="left" layout="vertical" radius="0.0" spacing="0.0" id="8FC-UF-ERL">
-                            <items>
-                                <group width="1" alignment="left" radius="0.0" id="vHB-bw-Eid">
-                                    <items>
-                                        <group alignment="left" radius="2" id="gB3-9w-yUE">
-                                            <items>
-                                                <imageView width="18" height="18" alignment="left" image="avatar" contentMode="scaleAspectFit" id="3R9-XW-jOx"/>
-                                            </items>
-                                        </group>
-                                        <label alignment="left" verticalAlignment="center" text="username" id="xga-Fy-Pur">
-                                            <color key="textColor" red="0.2784313725" green="0.98823529409999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
-                                        </label>
-                                        <group height="16" alignment="right" id="cEv-N2-nb9">
-                                            <items>
-                                                <label alignment="left" text="10" id="BRp-Mx-d95">
-                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
-                                                </label>
-                                            </items>
-                                        </group>
-                                    </items>
-                                </group>
-                                <group width="1" alignment="left" layout="vertical" spacing="5" id="lkh-Q5-XGr">
-                                    <items>
-                                        <label alignment="left" text="title" numberOfLines="0" id="ipG-OP-Vh1">
-                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                                        </label>
-                                        <group width="1" alignment="left" radius="0.0" id="Zi4-FI-E8m">
-                                            <items>
-                                                <group alignment="left" verticalAlignment="center" radius="3" id="BXC-ZO-edc">
-                                                    <items>
-                                                        <label alignment="center" text="node" id="YEd-b9-hZ5">
-                                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
-                                                        </label>
-                                                    </items>
-                                                    <color key="backgroundColor" red="0.66666666669999997" green="0.69019607839999997" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
-                                                </group>
-                                                <label alignment="right" verticalAlignment="center" text="5分钟前" id="wmo-eB-0N2">
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
-                                                </label>
-                                            </items>
-                                        </group>
-                                        <label alignment="left" text="content" numberOfLines="0" id="6qV-Qc-qRt"/>
-                                    </items>
-                                </group>
-                            </items>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </group>
-                    </items>
-                    <connections>
-                        <outlet property="avatar" destination="3R9-XW-jOx" id="2Tp-vD-FJH"/>
-                        <outlet property="contentLabel" destination="6qV-Qc-qRt" id="vl6-u3-zij"/>
-                        <outlet property="nodeLabel" destination="YEd-b9-hZ5" id="eiM-yz-kBS"/>
-                        <outlet property="timeLabel" destination="wmo-eB-0N2" id="Svf-6Y-PNz"/>
-                        <outlet property="titleLabel" destination="ipG-OP-Vh1" id="uPW-lr-7N9"/>
-                        <outlet property="usernameLabel" destination="xga-Fy-Pur" id="qx8-OY-dCN"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="612" y="327"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -253,6 +187,69 @@
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="V2EX_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="447" y="643"/>
+        </scene>
+        <!--IssueDetail-->
+        <scene sceneID="By3-Kh-J1L">
+            <objects>
+                <controller identifier="IssueDetail" hidesWhenLoading="NO" id="IPh-ch-aKb" customClass="IssueDetailInterfaceController" customModule="V2EX_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" radius="0.0" id="8xu-xE-d1S">
+                            <items>
+                                <group width="1" alignment="left" radius="0.0" id="Zi0-WB-Gd6">
+                                    <items>
+                                        <group alignment="left" radius="2" id="KUh-O1-eos">
+                                            <items>
+                                                <imageView width="18" height="18" alignment="left" image="avatar" contentMode="scaleAspectFit" id="cTo-rj-9BV"/>
+                                            </items>
+                                        </group>
+                                        <label alignment="left" text="username" textAlignment="left" id="RMx-fx-pn9">
+                                            <color key="textColor" red="0.2784313725" green="0.98823529409999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                        <label alignment="right" text="10" id="WGM-UB-Jpa">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="zR5-Qj-20V">
+                                    <items>
+                                        <label alignment="left" text="title" numberOfLines="0" id="4Hw-fj-ZBL">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <group width="1" alignment="left" radius="0.0" id="2fd-J8-3Uz">
+                                            <items>
+                                                <group alignment="left" verticalAlignment="center" radius="3" id="act-5z-ocG">
+                                                    <items>
+                                                        <label alignment="center" text="node" id="0Yj-qf-862">
+                                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                        </label>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.66666666669999997" green="0.69019607839999997" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                                </group>
+                                                <label alignment="right" verticalAlignment="center" text="5分钟前" id="VHa-iQ-mN3">
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <label alignment="left" text="content" numberOfLines="0" id="PPC-Si-sWF"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="avatar" destination="cTo-rj-9BV" id="nAi-oa-5ZM"/>
+                        <outlet property="contentLabel" destination="PPC-Si-sWF" id="q4P-Lc-yXM"/>
+                        <outlet property="nodeLabel" destination="0Yj-qf-862" id="s46-dN-YFM"/>
+                        <outlet property="timeLabel" destination="VHa-iQ-mN3" id="fMb-m7-zWX"/>
+                        <outlet property="titleLabel" destination="4Hw-fj-ZBL" id="ZhY-v8-gFw"/>
+                        <outlet property="usernameLabel" destination="RMx-fx-pn9" id="V2h-uM-49c"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="602" y="344.5"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.2784313725" green="0.98823529409999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Node{
+class Node {
 
 	var avatarLarge : String!
 	var avatarMini : String!
@@ -37,7 +37,7 @@ class Node{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if avatarLarge != nil{
 			dictionary["avatar_large"] = avatarLarge
 		}
